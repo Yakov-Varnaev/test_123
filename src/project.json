@@ -36,38 +36,68 @@
   "resolutions_ttl": {},
   "start_of_day": 0,
   "dry_run_status": {
-    "message": "Cmd('git') failed due to: exit code(1)\n  cmdline: git checkout -- .\n  stderr: 'error: pathspec '.' did not match any file(s) known to git'",
-    "progress": 36.36363636363637,
+    "message": "project.status.deploy.finished.dry.run",
+    "progress": 100.0,
     "stages": [
       {
         "title": "project.status.edge.fetch",
-        "log": "[DEBUG] - 2023-05-17 08:07:15,086 - tw_model_designer - preparing mongo client\n[DEBUG] - 2023-05-17 08:07:15,086 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2023-05-17 08:07:15,111 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2023-05-17 08:07:15,111 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2023-05-17 08:07:15,134 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2023-05-17 08:07:15,135 - tw_model_designer - preparing project dao\n[DEBUG] - 2023-05-17 08:07:15,135 - tw_model_designer - reading project\n[DEBUG] - 2023-05-17 08:07:15,214 - tw_model_designer - reading project package\n[DEBUG] - 2023-05-17 08:07:15,217 - tw_model_designer - initiating deployment\n[INFO] - 2023-05-17 08:07:15,295 - tw_model_designer - Retrieving edge mgmt information\n[DEBUG] - 2023-05-17 08:07:15,296 - tw_model_designer - Retrieved edge mgmt info successfully\n",
+        "log": "[DEBUG] - 2023-05-17 08:33:22,730 - tw_model_designer - preparing mongo client\n[DEBUG] - 2023-05-17 08:33:22,730 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2023-05-17 08:33:22,824 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2023-05-17 08:33:22,824 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2023-05-17 08:33:22,836 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2023-05-17 08:33:22,836 - tw_model_designer - preparing project dao\n[DEBUG] - 2023-05-17 08:33:22,836 - tw_model_designer - reading project\n[DEBUG] - 2023-05-17 08:33:22,938 - tw_model_designer - reading project package\n[DEBUG] - 2023-05-17 08:33:22,941 - tw_model_designer - initiating deployment\n[INFO] - 2023-05-17 08:33:23,028 - tw_model_designer - Retrieving edge mgmt information\n[DEBUG] - 2023-05-17 08:33:23,029 - tw_model_designer - Retrieved edge mgmt info successfully\n",
         "success": true
       },
       {
         "title": "project.status.workdir.init",
-        "log": "",
+        "log": "[INFO] - 2023-05-17 08:33:23,035 - tw_model_designer - directory /opt/thingswise/model-designer/build does not exist, mkdir\n[INFO] - 2023-05-17 08:33:23,035 - tw_model_designer - directory /opt/thingswise/model-designer/build/test/123 does not exist, mkdir\n",
         "success": true
       },
       {
         "title": "project.status.repo.setting.up",
-        "log": "[INFO] - 2023-05-17 08:07:15,307 - tw_model_designer - local repo with .git file already exists in directory /opt/thingswise/model-designer/build/test/123\n[DEBUG] - 2023-05-17 08:07:15,325 - git.util - Failed checking if running in CYGWIN due to: FileNotFoundError(2, \"No such file or directory: '/usr/bin/uname'\")\n[INFO] - 2023-05-17 08:07:15,354 - tw_model_designer - Repository git@github.com:Yakov-Varnaev/test_123.git successfully initialized in the directory /opt/thingswise/model-designer/build/test/123\n",
+        "log": "[INFO] - 2023-05-17 08:33:23,040 - tw_model_designer - Cloning repository: git@github.com:Yakov-Varnaev/test_123.git branch: master\n[DEBUG] - 2023-05-17 08:33:23,128 - git.util - Failed checking if running in CYGWIN due to: FileNotFoundError(2, \"No such file or directory: '/usr/bin/uname'\")\n[DEBUG] - 2023-05-17 08:33:23,136 - git.cmd - Popen(['git', 'clone', '-v', '--', 'git@github.com:Yakov-Varnaev/test_123.git', '/opt/thingswise/model-designer/build/test/123'], cwd=/, universal_newlines=True, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:33:25,021 - git.repo.base - Cmd(['git', 'clone', '-v', '--', 'git@github.com:Yakov-Varnaev/test_123.git', '/opt/thingswise/model-designer/build/test/123'])'s unused stdout: \n[INFO] - 2023-05-17 08:33:25,033 - tw_model_designer - Repository git@github.com:Yakov-Varnaev/test_123.git successfully initialized in the directory /opt/thingswise/model-designer/build/test/123\n",
         "success": true
       },
       {
         "title": "project.status.repo.sync",
-        "log": "[INFO] - 2023-05-17 08:07:15,398 - tw_model_designer - Synchronizing repo\n[DEBUG] - 2023-05-17 08:07:15,403 - git.cmd - Popen(['git', 'fetch', '-v', '--', 'origin'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=True, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:07:16,691 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:07:16,713 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:07:16,729 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:07:16,763 - git.cmd - Popen(['git', 'clean', '-d', '-x', '-f'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:07:16,801 - git.cmd - Popen(['git', 'checkout', '--', '.'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[ERROR] - 2023-05-17 08:07:16,822 - tw_model_designer - [test/123]: Cmd('git') failed due to: exit code(1)\n  cmdline: git checkout -- .\n  stderr: 'error: pathspec '.' did not match any file(s) known to git'\nTraceback (most recent call last):\n  File \"/venv/lib/python3.7/site-packages/tw_model_designer/routes/deploy_utils.py\", line 177, in run_deploy\n    deploy.sync_repo()\n  File \"/venv/lib/python3.7/site-packages/tw_model_designer/routes/deploy.py\", line 207, in sync_repo\n    self.config_repo.git.checkout('--', '.')\n  File \"/venv/lib/python3.7/site-packages/git/cmd.py\", line 741, in <lambda>\n    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)\n  File \"/venv/lib/python3.7/site-packages/git/cmd.py\", line 1315, in _call_process\n    return self.execute(call, **exec_kwargs)\n  File \"/venv/lib/python3.7/site-packages/git/cmd.py\", line 1109, in execute\n    raise GitCommandError(redacted_command, status, stderr_value, stdout_value)\ngit.exc.GitCommandError: Cmd('git') failed due to: exit code(1)\n  cmdline: git checkout -- .\n  stderr: 'error: pathspec '.' did not match any file(s) known to git'\n",
-        "success": false
+        "log": "[INFO] - 2023-05-17 08:33:25,043 - tw_model_designer - Synchronizing repo\n[DEBUG] - 2023-05-17 08:33:25,045 - git.cmd - Popen(['git', 'fetch', '-v', '--', 'origin'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=True, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:33:26,644 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:33:26,728 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:33:26,750 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:33:26,835 - git.cmd - Popen(['git', 'clean', '-d', '-x', '-f'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:33:26,928 - git.cmd - Popen(['git', 'checkout', '--', '.'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:33:26,948 - git.cmd - Popen(['git', 'checkout', 'master'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[INFO] - 2023-05-17 08:33:27,045 - tw_model_designer - Running git pull\n[DEBUG] - 2023-05-17 08:33:27,047 - git.cmd - Popen(['git', 'pull', '-v', '--', 'origin'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=True, shell=None, istream=None)\n[INFO] - 2023-05-17 08:33:28,547 - tw_model_designer - Repo is synchronized, delete stale files (except src directory)\n[INFO] - 2023-05-17 08:33:28,549 - tw_model_designer - Clean up source directory, excluding: ['tests/.*', 'data/.*', 'jets/.*', 'dt/project\\\\.yml', 'dt/dt\\\\.yml', 'dt/.*/dt\\\\.yml', 'dt/[^/]+/dm/_legacy/.*', 'web/web\\\\.json', 'web/field\\\\-specs\\\\.json', 'web/geoData/struct\\\\.json']\n",
+        "success": true
+      },
+      {
+        "title": "project.status.repo.success",
+        "log": "[INFO] - 2023-05-17 08:33:28,557 - tw_model_designer - Writing json configs\n[INFO] - 2023-05-17 08:33:28,664 - tw_model_designer - write package: package_0 json config\n[INFO] - 2023-05-17 08:33:28,666 - tw_model_designer - Writing project json dump\n[WARNING] - 2023-05-17 08:33:28,734 - tw_model_designer - Default key/secret value is used in project security settings\n[INFO] - 2023-05-17 08:33:28,735 - tw_model_designer - Writing src/jets/sec-config.json\n",
+        "success": true
+      },
+      {
+        "title": "project.status.deploy.yoi",
+        "log": "[INFO] - 2023-05-17 08:33:28,744 - tw_model_designer - Running Digital Twin Abstract Model Converter\n[INFO] - 2023-05-17 08:33:28,745 - yoi_abstract_model - parsing /opt/thingswise/model-designer/build/test/123/src/model/package_0.json\n[INFO] - 2023-05-17 08:33:28,763 - yoi_abstract_model - parsed /opt/thingswise/model-designer/build/test/123/src/model/package_0.json\n\n",
+        "success": true
+      },
+      {
+        "title": "project.status.deploy.generation",
+        "log": "[INFO] - 2023-05-17 08:33:28,767 - tw_model_designer - Abstract model conversion finished, generating model code\n",
+        "success": true
+      },
+      {
+        "title": "project.status.deploy.3D",
+        "log": "[INFO] - 2023-05-17 08:33:28,851 - tw_model_designer - Model code generation finished, preparing 3D models\n[INFO] - 2023-05-17 08:33:28,851 - tw_model_designer - dumping 3D model files\n",
+        "success": true
+      },
+      {
+        "title": "project.status.deploy.configuration",
+        "log": "[INFO] - 2023-05-17 08:33:28,862 - tw_model_designer - Prepared 3D models, creating project configuration\n[INFO] - 2023-05-17 08:33:28,862 - tw_model_designer - Write to /opt/thingswise/model-designer/build/test/123/src/dt/project.yml\n",
+        "success": true
+      },
+      {
+        "title": "project.status.deploy.dtc",
+        "log": "[INFO] - 2023-05-17 08:33:28,868 - tw_model_designer - Project configuration finished, running Digital Twin Compiler\n[INFO] - 2023-05-17 08:33:28,943 - tw_digital_twin_sdk - loading project properties from /opt/thingswise/model-designer/build/test/123/src/dt/project.yml\n[INFO] - 2023-05-17 08:33:29,639 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/dt/package_0/dm to /opt/thingswise/model-designer/build/test/123/dm/package_0\n[INFO] - 2023-05-17 08:33:29,643 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/cfg/config.json\n[INFO] - 2023-05-17 08:33:29,645 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/dm/models.yaml\n[INFO] - 2023-05-17 08:33:29,762 - tw_digital_twin_sdk - copying /opt/thingswise/model-designer/build/test/123/src/dt/init_data.json to /opt/thingswise/model-designer/build/test/123/dt/init_data.json\n[INFO] - 2023-05-17 08:33:29,763 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/init_roles.json to /opt/thingswise/model-designer/build/test/123/dt/init_roles.json\n[INFO] - 2023-05-17 08:33:29,848 - digital_machine.runtime.digital_machine_runtime - Loading package: package_0 [test.123.dm.package_0]\n[INFO] - 2023-05-17 08:33:29,857 - digital_machine.runtime.digital_machine_runtime - Adding model package_0___model_1 [<class 'type'>] from package test/123/package_0\n[INFO] - 2023-05-17 08:33:29,857 - digital_machine.runtime.digital_machine_runtime_impl - Associating {package_0}model_1 to package_0___model_1\n[INFO] - 2023-05-17 08:33:29,857 - digital_machine.runtime.digital_machine_runtime - Adding model package_0___model_0 [<class 'type'>] from package test/123/package_0\n[INFO] - 2023-05-17 08:33:29,857 - digital_machine.runtime.digital_machine_runtime_impl - Associating {package_0}model_0 to package_0___model_0\n[DEBUG] - 2023-05-17 08:33:29,857 - digital_machine.runtime.digital_machine_runtime - traverse: test_123, {package_0}model_0, [], {'{package_0}model_1': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>, '{package_0}model_0': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>}\n[DEBUG] - 2023-05-17 08:33:29,857 - digital_machine.runtime.digital_machine_runtime - traverse: test_123, {package_0}model_1, [], {'{package_0}model_1': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>, '{package_0}model_0': <class 'digital_machine.templates.simple.SimpleClassTemplate.default_pymodel.<locals>.SimpleClass'>}\n[DEBUG] - 2023-05-17 08:33:29,859 - digital_machine.runtime.digital_machine_runtime - package_0___model_1.outputs = ()\n[DEBUG] - 2023-05-17 08:33:29,859 - digital_machine.runtime.digital_machine_runtime - package_0___model_1.exports = (Export('child_domain_0.real',TimeAggregate(Input(stream(child_domain_0_input),'child_domain_0.real',None,None,None),'5s'),'5s',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','5s'),'15s'),'15s',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','15s'),'1min'),'1min',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','1min'),'5min'),'5min',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','5min'),'15min'),'15min',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','15min'),'1h'),'1h',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','1h'),'12h'),'12h',False), Export('child_domain_0.real',TimeAggregate(Placeholder('child_domain_0.real','12h'),'1d'),'1d',False))\n[DEBUG] - 2023-05-17 08:33:29,859 - digital_machine.runtime.digital_machine_runtime - package_0___model_0.outputs = ()\n[DEBUG] - 2023-05-17 08:33:29,859 - digital_machine.runtime.digital_machine_runtime - package_0___model_0.exports = ()\n[INFO] - 2023-05-17 08:33:29,861 - tw_digital_twin_sdk - serializing digital machine workflow graph\n[INFO] - 2023-05-17 08:33:29,941 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/dm/workflow.textproto\n[INFO] - 2023-05-17 08:33:29,941 - tw_digital_twin_sdk - serialized digital machine workflow graph successfully\n[INFO] - 2023-05-17 08:33:29,942 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/cfg/input.json\n[INFO] - 2023-05-17 08:33:29,942 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/jets to /opt/thingswise/model-designer/build/test/123/jets\n[INFO] - 2023-05-17 08:33:29,943 - tw_digital_twin_sdk - copying /opt/thingswise/model-designer/build/test/123/src/cfg/edge-upload-mapping.json to /opt/thingswise/model-designer/build/test/123/cfg/edge-upload-mapping.json\n[INFO] - 2023-05-17 08:33:29,965 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/dt/dt.yml\n[INFO] - 2023-05-17 08:33:29,965 - tw_digital_twin_sdk - empty output.json is omitted\n[INFO] - 2023-05-17 08:33:29,965 - tw_digital_twin_sdk - copying all files from /opt/thingswise/model-designer/build/test/123/src/web to /opt/thingswise/model-designer/build/test/123/web\n[INFO] - 2023-05-17 08:33:30,038 - tw_digital_twin_sdk - loading /opt/thingswise/model-designer/build/test/123/src/web/geoData/struct.json\n[INFO] - 2023-05-17 08:33:30,038 - tw_digital_twin_sdk - generate objectHierarchies from geo struct and model tree\n[INFO] - 2023-05-17 08:33:30,046 - tw_digital_twin_sdk - web.json: pageTitle is not set\n[INFO] - 2023-05-17 08:33:30,046 - tw_digital_twin_sdk - web.json: faviconPath is not set\n[INFO] - 2023-05-17 08:33:30,046 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/favicon.png to /opt/thingswise/model-designer/build/test/123/web/resource/images\n[INFO] - 2023-05-17 08:33:30,047 - tw_digital_twin_sdk - web.json: brandImagePath is not set\n[INFO] - 2023-05-17 08:33:30,047 - tw_digital_twin_sdk - copying /venv/lib/python3.7/site-packages/tw_digital_twin_sdk/resources/logo.png to /opt/thingswise/model-designer/build/test/123/web/resource/images\n[INFO] - 2023-05-17 08:33:30,047 - tw_digital_twin_sdk - web.json: languages is not set\n[INFO] - 2023-05-17 08:33:30,047 - tw_digital_twin_sdk - web.json: defaultLanguage is not set\n[INFO] - 2023-05-17 08:33:30,047 - tw_digital_twin_sdk - web.json: metadataDomain is not set\n[INFO] - 2023-05-17 08:33:30,047 - tw_digital_twin_sdk - metadataDeviceField: metadataDeviceField is not set\n[INFO] - 2023-05-17 08:33:30,047 - tw_digital_twin_sdk - web.json: objectHierarchy is not set\n[INFO] - 2023-05-17 08:33:30,048 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/web.json\n[INFO] - 2023-05-17 08:33:30,048 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/design.json\n[INFO] - 2023-05-17 08:33:30,048 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/objects.json\n[INFO] - 2023-05-17 08:33:30,053 - tw_digital_twin_sdk - generated /opt/thingswise/model-designer/build/test/123/web/metric-specs.json\n",
+        "success": true
       }
     ],
-    "state": "error",
-    "worker_timestamp": "2023-05-16T13:41:45.731572+00:00",
-    "build_time": "2023-05-16T17:08:50.015041+00:00"
+    "state": "success",
+    "worker_timestamp": "2023-05-17T08:20:00.052274+00:00",
+    "build_time": "2023-05-17T08:33:30.053643+00:00"
   },
   "time_zone": "Europe/Moscow",
   "source_code_encrypted": false,
   "packages": {
-    "64648f012e96dcc547ae2622": {
+    "64649169007ed2fd7f2e9075": {
       "name": "package_0",
       "package_id": "63d2dfc7c85fbfa7415fe2d2",
       "project": "123",
@@ -75,7 +105,7 @@
       "domains": [
         {
           "_id": {
-            "$oid": "64648f012e96dcc547ae2627"
+            "$oid": "64649169007ed2fd7f2e907a"
           },
           "columns": [
             {
@@ -91,14 +121,14 @@
           ],
           "kind": "operational",
           "name": "domain_0",
-          "package_id": "64648f012e96dcc547ae2622",
+          "package_id": "64649169007ed2fd7f2e9075",
           "project": "123",
           "scope": "test",
           "groups": []
         }
       ],
       "models": {
-        "64648f012e96dcc547ae2623": {
+        "64649169007ed2fd7f2e9076": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -116,9 +146,9 @@
             "y": -73
           },
           "is_collapsed": false,
-          "package_id": "64648f012e96dcc547ae2622",
+          "package_id": "64649169007ed2fd7f2e9075",
           "package_obj_id": {
-            "$oid": "64648f012e96dcc547ae2622"
+            "$oid": "64649169007ed2fd7f2e9075"
           },
           "project": "123",
           "relations": {
@@ -127,13 +157,13 @@
           },
           "scope": "test",
           "template_id": "1",
-          "id": "64648f012e96dcc547ae2623",
+          "id": "64649169007ed2fd7f2e9076",
           "domains": [],
           "timezone": "Europe/Moscow",
           "instances": [
             {
               "_id": {
-                "$oid": "64648f012e96dcc547ae2625"
+                "$oid": "64649169007ed2fd7f2e9078"
               },
               "coordinates": {
                 "x": -20,
@@ -141,15 +171,15 @@
               },
               "is_collapsed": false,
               "key": "instance_0",
-              "model_id": "64648f012e96dcc547ae2623",
-              "package_id": "64648f012e96dcc547ae2622",
+              "model_id": "64649169007ed2fd7f2e9076",
+              "package_id": "64649169007ed2fd7f2e9075",
               "project": "123",
               "relations": {}
             }
           ],
           "models_3d": []
         },
-        "64648f012e96dcc547ae2624": {
+        "64649169007ed2fd7f2e9077": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -167,22 +197,22 @@
             "y": 145
           },
           "is_collapsed": false,
-          "package_id": "64648f012e96dcc547ae2622",
+          "package_id": "64649169007ed2fd7f2e9075",
           "package_obj_id": {
-            "$oid": "64648f012e96dcc547ae2622"
+            "$oid": "64649169007ed2fd7f2e9075"
           },
           "project": "123",
           "relations": {
-            "in_scope_of": "64648f012e96dcc547ae2623",
+            "in_scope_of": "64649169007ed2fd7f2e9076",
             "in_sub_class_of": []
           },
           "scope": "test",
           "template_id": "1",
-          "id": "64648f012e96dcc547ae2624",
+          "id": "64649169007ed2fd7f2e9077",
           "domains": [
             {
               "_id": {
-                "$oid": "64648f012e96dcc547ae2628"
+                "$oid": "64649169007ed2fd7f2e907b"
               },
               "columns": [
                 {
@@ -190,10 +220,10 @@
                 }
               ],
               "kind": "operational",
-              "model_id": "64648f012e96dcc547ae2624",
+              "model_id": "64649169007ed2fd7f2e9077",
               "name": "domain_0",
-              "package_id": "64648f012e96dcc547ae2622",
-              "parent_id": "64648f012e96dcc547ae2627",
+              "package_id": "64649169007ed2fd7f2e9075",
+              "parent_id": "64649169007ed2fd7f2e907a",
               "project": "123",
               "scope": "test",
               "groups": []
@@ -203,7 +233,7 @@
           "instances": [
             {
               "_id": {
-                "$oid": "64648f012e96dcc547ae2626"
+                "$oid": "64649169007ed2fd7f2e9079"
               },
               "coordinates": {
                 "x": 140,
@@ -211,8 +241,8 @@
               },
               "is_collapsed": false,
               "key": "instance_1",
-              "model_id": "64648f012e96dcc547ae2624",
-              "package_id": "64648f012e96dcc547ae2622",
+              "model_id": "64649169007ed2fd7f2e9077",
+              "package_id": "64649169007ed2fd7f2e9075",
               "project": "123",
               "scope": "instance_0",
               "shift_slot_id": null,
@@ -233,25 +263,25 @@
       "keys": [
         {
           "_id": {
-            "$oid": "64648f012e96dcc547ae2620"
+            "$oid": "64649169007ed2fd7f2e9073"
           },
           "key": "key_0",
-          "package_id": "64648f012e96dcc547ae2622",
+          "package_id": "64649169007ed2fd7f2e9075",
           "project": "123",
           "scope": "test"
         },
         {
           "_id": {
-            "$oid": "64648f012e96dcc547ae2621"
+            "$oid": "64649169007ed2fd7f2e9074"
           },
           "key": "key_1",
-          "package_id": "64648f012e96dcc547ae2622",
+          "package_id": "64649169007ed2fd7f2e9075",
           "project": "123",
           "scope": "test"
         }
       ],
       "shift_schedules": [],
-      "id": "64648f012e96dcc547ae2622"
+      "id": "64649169007ed2fd7f2e9075"
     }
   }
 }

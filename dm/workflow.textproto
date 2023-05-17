@@ -154,17 +154,6 @@ templates {
         stream {
           index: 11
         }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "1h"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 11
-        }
         placeholder {
           spec {
             label: "domain_0.real"
@@ -176,7 +165,7 @@ templates {
       }
       nodes {
         stream {
-          index: 13
+          index: 12
         }
         time_aggregate {
           resolution: "12h"
@@ -184,7 +173,7 @@ templates {
       }
       nodes {
         stream {
-          index: 14
+          index: 13
         }
         placeholder {
           spec {
@@ -197,7 +186,7 @@ templates {
       }
       nodes {
         stream {
-          index: 15
+          index: 14
         }
         time_aggregate {
           resolution: "1d"
@@ -205,12 +194,23 @@ templates {
       }
       nodes {
         stream {
-          index: 9
+          index: 1
         }
         export {
           label: "domain_0.real"
           resolution {
-            value: "15min"
+            value: "5s"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 11
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "1h"
           }
         }
       }
@@ -227,28 +227,6 @@ templates {
       }
       nodes {
         stream {
-          index: 5
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "1min"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 1
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "5s"
-          }
-        }
-      }
-      nodes {
-        stream {
           index: 3
         }
         export {
@@ -260,23 +238,45 @@ templates {
       }
       nodes {
         stream {
-          index: 16
-        }
-        export {
-          label: "domain_0.real"
-          resolution {
-            value: "1d"
-          }
-        }
-      }
-      nodes {
-        stream {
-          index: 14
+          index: 13
         }
         export {
           label: "domain_0.real"
           resolution {
             value: "12h"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 5
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "1min"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 9
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "15min"
+          }
+        }
+      }
+      nodes {
+        stream {
+          index: 15
+        }
+        export {
+          label: "domain_0.real"
+          resolution {
+            value: "1d"
           }
         }
       }

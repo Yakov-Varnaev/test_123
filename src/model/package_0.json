@@ -1,12 +1,12 @@
 {
-  "_id": "64648f012e96dcc547ae2622",
+  "_id": "64649169007ed2fd7f2e9075",
   "name": "package_0",
   "package_id": "63d2dfc7c85fbfa7415fe2d2",
   "project": "123",
   "scope": "test",
   "domains": [
     {
-      "_id": "64648f012e96dcc547ae2627",
+      "_id": "64649169007ed2fd7f2e907a",
       "columns": [
         {
           "id": "real",
@@ -21,14 +21,14 @@
       ],
       "kind": "operational",
       "name": "domain_0",
-      "package_id": "64648f012e96dcc547ae2622",
+      "package_id": "64649169007ed2fd7f2e9075",
       "project": "123",
       "scope": "test",
       "groups": []
     }
   ],
   "models": {
-    "64648f012e96dcc547ae2623": {
+    "64649169007ed2fd7f2e9076": {
       "attributes": {
         "abstract": false,
         "axis": {},
@@ -46,8 +46,8 @@
         "y": -73
       },
       "is_collapsed": false,
-      "package_id": "64648f012e96dcc547ae2622",
-      "package_obj_id": "64648f012e96dcc547ae2622",
+      "package_id": "64649169007ed2fd7f2e9075",
+      "package_obj_id": "64649169007ed2fd7f2e9075",
       "project": "123",
       "relations": {
         "in_scope_of": null,
@@ -55,27 +55,27 @@
       },
       "scope": "test",
       "template_id": "1",
-      "id": "64648f012e96dcc547ae2623",
+      "id": "64649169007ed2fd7f2e9076",
       "domains": [],
       "timezone": "Europe/Moscow",
       "instances": [
         {
-          "_id": "64648f012e96dcc547ae2625",
+          "_id": "64649169007ed2fd7f2e9078",
           "coordinates": {
             "x": -20,
             "y": -258
           },
           "is_collapsed": false,
           "key": "instance_0",
-          "model_id": "64648f012e96dcc547ae2623",
-          "package_id": "64648f012e96dcc547ae2622",
+          "model_id": "64649169007ed2fd7f2e9076",
+          "package_id": "64649169007ed2fd7f2e9075",
           "project": "123",
           "relations": {}
         }
       ],
       "models_3d": []
     },
-    "64648f012e96dcc547ae2624": {
+    "64649169007ed2fd7f2e9077": {
       "attributes": {
         "abstract": false,
         "axis": {},
@@ -93,29 +93,29 @@
         "y": 145
       },
       "is_collapsed": false,
-      "package_id": "64648f012e96dcc547ae2622",
-      "package_obj_id": "64648f012e96dcc547ae2622",
+      "package_id": "64649169007ed2fd7f2e9075",
+      "package_obj_id": "64649169007ed2fd7f2e9075",
       "project": "123",
       "relations": {
-        "in_scope_of": "64648f012e96dcc547ae2623",
+        "in_scope_of": "64649169007ed2fd7f2e9076",
         "in_sub_class_of": []
       },
       "scope": "test",
       "template_id": "1",
-      "id": "64648f012e96dcc547ae2624",
+      "id": "64649169007ed2fd7f2e9077",
       "domains": [
         {
-          "_id": "64648f012e96dcc547ae2628",
+          "_id": "64649169007ed2fd7f2e907b",
           "columns": [
             {
               "id": "real"
             }
           ],
           "kind": "operational",
-          "model_id": "64648f012e96dcc547ae2624",
+          "model_id": "64649169007ed2fd7f2e9077",
           "name": "domain_0",
-          "package_id": "64648f012e96dcc547ae2622",
-          "parent_id": "64648f012e96dcc547ae2627",
+          "package_id": "64649169007ed2fd7f2e9075",
+          "parent_id": "64649169007ed2fd7f2e907a",
           "project": "123",
           "scope": "test",
           "groups": []
@@ -124,15 +124,15 @@
       "timezone": "Europe/Moscow",
       "instances": [
         {
-          "_id": "64648f012e96dcc547ae2626",
+          "_id": "64649169007ed2fd7f2e9079",
           "coordinates": {
             "x": 140,
             "y": -148
           },
           "is_collapsed": false,
           "key": "instance_1",
-          "model_id": "64648f012e96dcc547ae2624",
-          "package_id": "64648f012e96dcc547ae2622",
+          "model_id": "64649169007ed2fd7f2e9077",
+          "package_id": "64649169007ed2fd7f2e9075",
           "project": "123",
           "scope": "instance_0",
           "shift_slot_id": null,
@@ -152,16 +152,16 @@
   "categories": [],
   "keys": [
     {
-      "_id": "64648f012e96dcc547ae2620",
+      "_id": "64649169007ed2fd7f2e9073",
       "key": "key_0",
-      "package_id": "64648f012e96dcc547ae2622",
+      "package_id": "64649169007ed2fd7f2e9075",
       "project": "123",
       "scope": "test"
     },
     {
-      "_id": "64648f012e96dcc547ae2621",
+      "_id": "64649169007ed2fd7f2e9074",
       "key": "key_1",
-      "package_id": "64648f012e96dcc547ae2622",
+      "package_id": "64649169007ed2fd7f2e9075",
       "project": "123",
       "scope": "test"
     }
