@@ -65,8 +65,9 @@
     "build_time": "2023-05-16T17:08:50.015041+00:00"
   },
   "time_zone": "Europe/Moscow",
+  "source_code_encrypted": false,
   "packages": {
-    "64648e7f87f3d1b856ae2622": {
+    "64648f012e96dcc547ae2622": {
       "name": "package_0",
       "package_id": "63d2dfc7c85fbfa7415fe2d2",
       "project": "123",
@@ -74,7 +75,7 @@
       "domains": [
         {
           "_id": {
-            "$oid": "64648e7f87f3d1b856ae2627"
+            "$oid": "64648f012e96dcc547ae2627"
           },
           "columns": [
             {
@@ -90,14 +91,14 @@
           ],
           "kind": "operational",
           "name": "domain_0",
-          "package_id": "64648e7f87f3d1b856ae2622",
+          "package_id": "64648f012e96dcc547ae2622",
           "project": "123",
           "scope": "test",
           "groups": []
         }
       ],
       "models": {
-        "64648e7f87f3d1b856ae2623": {
+        "64648f012e96dcc547ae2623": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -115,9 +116,9 @@
             "y": -73
           },
           "is_collapsed": false,
-          "package_id": "64648e7f87f3d1b856ae2622",
+          "package_id": "64648f012e96dcc547ae2622",
           "package_obj_id": {
-            "$oid": "64648e7f87f3d1b856ae2622"
+            "$oid": "64648f012e96dcc547ae2622"
           },
           "project": "123",
           "relations": {
@@ -126,13 +127,13 @@
           },
           "scope": "test",
           "template_id": "1",
-          "id": "64648e7f87f3d1b856ae2623",
+          "id": "64648f012e96dcc547ae2623",
           "domains": [],
           "timezone": "Europe/Moscow",
           "instances": [
             {
               "_id": {
-                "$oid": "64648e7f87f3d1b856ae2625"
+                "$oid": "64648f012e96dcc547ae2625"
               },
               "coordinates": {
                 "x": -20,
@@ -140,15 +141,15 @@
               },
               "is_collapsed": false,
               "key": "instance_0",
-              "model_id": "64648e7f87f3d1b856ae2623",
-              "package_id": "64648e7f87f3d1b856ae2622",
+              "model_id": "64648f012e96dcc547ae2623",
+              "package_id": "64648f012e96dcc547ae2622",
               "project": "123",
               "relations": {}
             }
           ],
           "models_3d": []
         },
-        "64648e7f87f3d1b856ae2624": {
+        "64648f012e96dcc547ae2624": {
           "attributes": {
             "abstract": false,
             "axis": {},
@@ -166,22 +167,22 @@
             "y": 145
           },
           "is_collapsed": false,
-          "package_id": "64648e7f87f3d1b856ae2622",
+          "package_id": "64648f012e96dcc547ae2622",
           "package_obj_id": {
-            "$oid": "64648e7f87f3d1b856ae2622"
+            "$oid": "64648f012e96dcc547ae2622"
           },
           "project": "123",
           "relations": {
-            "in_scope_of": "64648e7f87f3d1b856ae2623",
+            "in_scope_of": "64648f012e96dcc547ae2623",
             "in_sub_class_of": []
           },
           "scope": "test",
           "template_id": "1",
-          "id": "64648e7f87f3d1b856ae2624",
+          "id": "64648f012e96dcc547ae2624",
           "domains": [
             {
               "_id": {
-                "$oid": "64648e7f87f3d1b856ae2628"
+                "$oid": "64648f012e96dcc547ae2628"
               },
               "columns": [
                 {
@@ -189,10 +190,10 @@
                 }
               ],
               "kind": "operational",
-              "model_id": "64648e7f87f3d1b856ae2624",
+              "model_id": "64648f012e96dcc547ae2624",
               "name": "domain_0",
-              "package_id": "64648e7f87f3d1b856ae2622",
-              "parent_id": "64648e7f87f3d1b856ae2627",
+              "package_id": "64648f012e96dcc547ae2622",
+              "parent_id": "64648f012e96dcc547ae2627",
               "project": "123",
               "scope": "test",
               "groups": []
@@ -202,7 +203,7 @@
           "instances": [
             {
               "_id": {
-                "$oid": "64648e7f87f3d1b856ae2626"
+                "$oid": "64648f012e96dcc547ae2626"
               },
               "coordinates": {
                 "x": 140,
@@ -210,8 +211,8 @@
               },
               "is_collapsed": false,
               "key": "instance_1",
-              "model_id": "64648e7f87f3d1b856ae2624",
-              "package_id": "64648e7f87f3d1b856ae2622",
+              "model_id": "64648f012e96dcc547ae2624",
+              "package_id": "64648f012e96dcc547ae2622",
               "project": "123",
               "scope": "instance_0",
               "shift_slot_id": null,
@@ -232,25 +233,25 @@
       "keys": [
         {
           "_id": {
-            "$oid": "64648e7f87f3d1b856ae2620"
+            "$oid": "64648f012e96dcc547ae2620"
           },
           "key": "key_0",
-          "package_id": "64648e7f87f3d1b856ae2622",
+          "package_id": "64648f012e96dcc547ae2622",
           "project": "123",
           "scope": "test"
         },
         {
           "_id": {
-            "$oid": "64648e7f87f3d1b856ae2621"
+            "$oid": "64648f012e96dcc547ae2621"
           },
           "key": "key_1",
-          "package_id": "64648e7f87f3d1b856ae2622",
+          "package_id": "64648f012e96dcc547ae2622",
           "project": "123",
           "scope": "test"
         }
       ],
       "shift_schedules": [],
-      "id": "64648e7f87f3d1b856ae2622"
+      "id": "64648f012e96dcc547ae2622"
     }
   }
 }
