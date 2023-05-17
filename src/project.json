@@ -1,0 +1,256 @@
+{
+  "_id": {
+    "$oid": "62ea44e3ea466326649cbc1d"
+  },
+  "scope": "test",
+  "project": "123",
+  "name": "123",
+  "sec_config": {
+    "symmetric_keys": {
+      "d9VdzHnFu": {
+        "key": "0",
+        "secret": "0",
+        "expiration": 0
+      },
+      "hQI4dlJkO": {
+        "key": "0",
+        "secret": "0",
+        "expiration": 0
+      }
+    },
+    "app_keys": {
+      "stream_api_key": [
+        {
+          "group": "symmetricKeys",
+          "name": "d9VdzHnFu"
+        }
+      ],
+      "device_db_key": [
+        {
+          "group": "symmetricKeys",
+          "name": "hQI4dlJkO"
+        }
+      ]
+    }
+  },
+  "resolutions_ttl": {},
+  "start_of_day": 0,
+  "dry_run_status": {
+    "message": "Cmd('git') failed due to: exit code(1)\n  cmdline: git checkout -- .\n  stderr: 'error: pathspec '.' did not match any file(s) known to git'",
+    "progress": 36.36363636363637,
+    "stages": [
+      {
+        "title": "project.status.edge.fetch",
+        "log": "[DEBUG] - 2023-05-17 08:07:15,086 - tw_model_designer - preparing mongo client\n[DEBUG] - 2023-05-17 08:07:15,086 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2023-05-17 08:07:15,111 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2023-05-17 08:07:15,111 - tw_model_designer - connecting to mongo...\n[DEBUG] - 2023-05-17 08:07:15,134 - tw_model_designer - connected to mongo successfully\n[DEBUG] - 2023-05-17 08:07:15,135 - tw_model_designer - preparing project dao\n[DEBUG] - 2023-05-17 08:07:15,135 - tw_model_designer - reading project\n[DEBUG] - 2023-05-17 08:07:15,214 - tw_model_designer - reading project package\n[DEBUG] - 2023-05-17 08:07:15,217 - tw_model_designer - initiating deployment\n[INFO] - 2023-05-17 08:07:15,295 - tw_model_designer - Retrieving edge mgmt information\n[DEBUG] - 2023-05-17 08:07:15,296 - tw_model_designer - Retrieved edge mgmt info successfully\n",
+        "success": true
+      },
+      {
+        "title": "project.status.workdir.init",
+        "log": "",
+        "success": true
+      },
+      {
+        "title": "project.status.repo.setting.up",
+        "log": "[INFO] - 2023-05-17 08:07:15,307 - tw_model_designer - local repo with .git file already exists in directory /opt/thingswise/model-designer/build/test/123\n[DEBUG] - 2023-05-17 08:07:15,325 - git.util - Failed checking if running in CYGWIN due to: FileNotFoundError(2, \"No such file or directory: '/usr/bin/uname'\")\n[INFO] - 2023-05-17 08:07:15,354 - tw_model_designer - Repository git@github.com:Yakov-Varnaev/test_123.git successfully initialized in the directory /opt/thingswise/model-designer/build/test/123\n",
+        "success": true
+      },
+      {
+        "title": "project.status.repo.sync",
+        "log": "[INFO] - 2023-05-17 08:07:15,398 - tw_model_designer - Synchronizing repo\n[DEBUG] - 2023-05-17 08:07:15,403 - git.cmd - Popen(['git', 'fetch', '-v', '--', 'origin'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=True, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:07:16,691 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:07:16,713 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:07:16,729 - git.cmd - Popen(['git', 'branch', '-a'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:07:16,763 - git.cmd - Popen(['git', 'clean', '-d', '-x', '-f'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[DEBUG] - 2023-05-17 08:07:16,801 - git.cmd - Popen(['git', 'checkout', '--', '.'], cwd=/opt/thingswise/model-designer/build/test/123, universal_newlines=False, shell=None, istream=None)\n[ERROR] - 2023-05-17 08:07:16,822 - tw_model_designer - [test/123]: Cmd('git') failed due to: exit code(1)\n  cmdline: git checkout -- .\n  stderr: 'error: pathspec '.' did not match any file(s) known to git'\nTraceback (most recent call last):\n  File \"/venv/lib/python3.7/site-packages/tw_model_designer/routes/deploy_utils.py\", line 177, in run_deploy\n    deploy.sync_repo()\n  File \"/venv/lib/python3.7/site-packages/tw_model_designer/routes/deploy.py\", line 207, in sync_repo\n    self.config_repo.git.checkout('--', '.')\n  File \"/venv/lib/python3.7/site-packages/git/cmd.py\", line 741, in <lambda>\n    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)\n  File \"/venv/lib/python3.7/site-packages/git/cmd.py\", line 1315, in _call_process\n    return self.execute(call, **exec_kwargs)\n  File \"/venv/lib/python3.7/site-packages/git/cmd.py\", line 1109, in execute\n    raise GitCommandError(redacted_command, status, stderr_value, stdout_value)\ngit.exc.GitCommandError: Cmd('git') failed due to: exit code(1)\n  cmdline: git checkout -- .\n  stderr: 'error: pathspec '.' did not match any file(s) known to git'\n",
+        "success": false
+      }
+    ],
+    "state": "error",
+    "worker_timestamp": "2023-05-16T13:41:45.731572+00:00",
+    "build_time": "2023-05-16T17:08:50.015041+00:00"
+  },
+  "time_zone": "Europe/Moscow",
+  "packages": {
+    "64648e7f87f3d1b856ae2622": {
+      "name": "package_0",
+      "package_id": "63d2dfc7c85fbfa7415fe2d2",
+      "project": "123",
+      "scope": "test",
+      "domains": [
+        {
+          "_id": {
+            "$oid": "64648e7f87f3d1b856ae2627"
+          },
+          "columns": [
+            {
+              "id": "real",
+              "type": "REAL",
+              "default_aggregation": "avg",
+              "field_type": "direct",
+              "resolution": "5s,15s,1min,5min,15min,1h,12h,1d",
+              "category": "",
+              "decimals": 6,
+              "raw_data_resolution": null
+            }
+          ],
+          "kind": "operational",
+          "name": "domain_0",
+          "package_id": "64648e7f87f3d1b856ae2622",
+          "project": "123",
+          "scope": "test",
+          "groups": []
+        }
+      ],
+      "models": {
+        "64648e7f87f3d1b856ae2623": {
+          "attributes": {
+            "abstract": false,
+            "axis": {},
+            "key": "key_0",
+            "label": {
+              "i18n": {
+                "en-US": "",
+                "zh-CN": ""
+              }
+            },
+            "name": "model_0"
+          },
+          "coordinates": {
+            "x": -28,
+            "y": -73
+          },
+          "is_collapsed": false,
+          "package_id": "64648e7f87f3d1b856ae2622",
+          "package_obj_id": {
+            "$oid": "64648e7f87f3d1b856ae2622"
+          },
+          "project": "123",
+          "relations": {
+            "in_scope_of": null,
+            "in_sub_class_of": []
+          },
+          "scope": "test",
+          "template_id": "1",
+          "id": "64648e7f87f3d1b856ae2623",
+          "domains": [],
+          "timezone": "Europe/Moscow",
+          "instances": [
+            {
+              "_id": {
+                "$oid": "64648e7f87f3d1b856ae2625"
+              },
+              "coordinates": {
+                "x": -20,
+                "y": -258
+              },
+              "is_collapsed": false,
+              "key": "instance_0",
+              "model_id": "64648e7f87f3d1b856ae2623",
+              "package_id": "64648e7f87f3d1b856ae2622",
+              "project": "123",
+              "relations": {}
+            }
+          ],
+          "models_3d": []
+        },
+        "64648e7f87f3d1b856ae2624": {
+          "attributes": {
+            "abstract": false,
+            "axis": {},
+            "key": "key_1",
+            "label": {
+              "i18n": {
+                "en-US": "",
+                "zh-CN": ""
+              }
+            },
+            "name": "model_1"
+          },
+          "coordinates": {
+            "x": 144,
+            "y": 145
+          },
+          "is_collapsed": false,
+          "package_id": "64648e7f87f3d1b856ae2622",
+          "package_obj_id": {
+            "$oid": "64648e7f87f3d1b856ae2622"
+          },
+          "project": "123",
+          "relations": {
+            "in_scope_of": "64648e7f87f3d1b856ae2623",
+            "in_sub_class_of": []
+          },
+          "scope": "test",
+          "template_id": "1",
+          "id": "64648e7f87f3d1b856ae2624",
+          "domains": [
+            {
+              "_id": {
+                "$oid": "64648e7f87f3d1b856ae2628"
+              },
+              "columns": [
+                {
+                  "id": "real"
+                }
+              ],
+              "kind": "operational",
+              "model_id": "64648e7f87f3d1b856ae2624",
+              "name": "domain_0",
+              "package_id": "64648e7f87f3d1b856ae2622",
+              "parent_id": "64648e7f87f3d1b856ae2627",
+              "project": "123",
+              "scope": "test",
+              "groups": []
+            }
+          ],
+          "timezone": "Europe/Moscow",
+          "instances": [
+            {
+              "_id": {
+                "$oid": "64648e7f87f3d1b856ae2626"
+              },
+              "coordinates": {
+                "x": 140,
+                "y": -148
+              },
+              "is_collapsed": false,
+              "key": "instance_1",
+              "model_id": "64648e7f87f3d1b856ae2624",
+              "package_id": "64648e7f87f3d1b856ae2622",
+              "project": "123",
+              "scope": "instance_0",
+              "shift_slot_id": null,
+              "relations": {}
+            }
+          ],
+          "models_3d": []
+        }
+      },
+      "edge_upload_mapping": {},
+      "command_mapping": {},
+      "authorization": {
+        "functions": [],
+        "roles": [],
+        "users": []
+      },
+      "categories": [],
+      "keys": [
+        {
+          "_id": {
+            "$oid": "64648e7f87f3d1b856ae2620"
+          },
+          "key": "key_0",
+          "package_id": "64648e7f87f3d1b856ae2622",
+          "project": "123",
+          "scope": "test"
+        },
+        {
+          "_id": {
+            "$oid": "64648e7f87f3d1b856ae2621"
+          },
+          "key": "key_1",
+          "package_id": "64648e7f87f3d1b856ae2622",
+          "project": "123",
+          "scope": "test"
+        }
+      ],
+      "shift_schedules": [],
+      "id": "64648e7f87f3d1b856ae2622"
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "_id": "64648e7f87f3d1b856ae2622",
+  "name": "package_0",
+  "package_id": "63d2dfc7c85fbfa7415fe2d2",
+  "project": "123",
+  "scope": "test",
+  "domains": [
+    {
+      "_id": "64648e7f87f3d1b856ae2627",
+      "columns": [
+        {
+          "id": "real",
+          "type": "REAL",
+          "default_aggregation": "avg",
+          "field_type": "direct",
+          "resolution": "5s,15s,1min,5min,15min,1h,12h,1d",
+          "category": "",
+          "decimals": 6,
+          "raw_data_resolution": null
+        }
+      ],
+      "kind": "operational",
+      "name": "domain_0",
+      "package_id": "64648e7f87f3d1b856ae2622",
+      "project": "123",
+      "scope": "test",
+      "groups": []
+    }
+  ],
+  "models": {
+    "64648e7f87f3d1b856ae2623": {
+      "attributes": {
+        "abstract": false,
+        "axis": {},
+        "key": "key_0",
+        "label": {
+          "i18n": {
+            "en-US": "",
+            "zh-CN": ""
+          }
+        },
+        "name": "model_0"
+      },
+      "coordinates": {
+        "x": -28,
+        "y": -73
+      },
+      "is_collapsed": false,
+      "package_id": "64648e7f87f3d1b856ae2622",
+      "package_obj_id": "64648e7f87f3d1b856ae2622",
+      "project": "123",
+      "relations": {
+        "in_scope_of": null,
+        "in_sub_class_of": []
+      },
+      "scope": "test",
+      "template_id": "1",
+      "id": "64648e7f87f3d1b856ae2623",
+      "domains": [],
+      "timezone": "Europe/Moscow",
+      "instances": [
+        {
+          "_id": "64648e7f87f3d1b856ae2625",
+          "coordinates": {
+            "x": -20,
+            "y": -258
+          },
+          "is_collapsed": false,
+          "key": "instance_0",
+          "model_id": "64648e7f87f3d1b856ae2623",
+          "package_id": "64648e7f87f3d1b856ae2622",
+          "project": "123",
+          "relations": {}
+        }
+      ],
+      "models_3d": []
+    },
+    "64648e7f87f3d1b856ae2624": {
+      "attributes": {
+        "abstract": false,
+        "axis": {},
+        "key": "key_1",
+        "label": {
+          "i18n": {
+            "en-US": "",
+            "zh-CN": ""
+          }
+        },
+        "name": "model_1"
+      },
+      "coordinates": {
+        "x": 144,
+        "y": 145
+      },
+      "is_collapsed": false,
+      "package_id": "64648e7f87f3d1b856ae2622",
+      "package_obj_id": "64648e7f87f3d1b856ae2622",
+      "project": "123",
+      "relations": {
+        "in_scope_of": "64648e7f87f3d1b856ae2623",
+        "in_sub_class_of": []
+      },
+      "scope": "test",
+      "template_id": "1",
+      "id": "64648e7f87f3d1b856ae2624",
+      "domains": [
+        {
+          "_id": "64648e7f87f3d1b856ae2628",
+          "columns": [
+            {
+              "id": "real"
+            }
+          ],
+          "kind": "operational",
+          "model_id": "64648e7f87f3d1b856ae2624",
+          "name": "domain_0",
+          "package_id": "64648e7f87f3d1b856ae2622",
+          "parent_id": "64648e7f87f3d1b856ae2627",
+          "project": "123",
+          "scope": "test",
+          "groups": []
+        }
+      ],
+      "timezone": "Europe/Moscow",
+      "instances": [
+        {
+          "_id": "64648e7f87f3d1b856ae2626",
+          "coordinates": {
+            "x": 140,
+            "y": -148
+          },
+          "is_collapsed": false,
+          "key": "instance_1",
+          "model_id": "64648e7f87f3d1b856ae2624",
+          "package_id": "64648e7f87f3d1b856ae2622",
+          "project": "123",
+          "scope": "instance_0",
+          "shift_slot_id": null,
+          "relations": {}
+        }
+      ],
+      "models_3d": []
+    }
+  },
+  "edge_upload_mapping": {},
+  "command_mapping": {},
+  "authorization": {
+    "functions": [],
+    "roles": [],
+    "users": []
+  },
+  "categories": [],
+  "keys": [
+    {
+      "_id": "64648e7f87f3d1b856ae2620",
+      "key": "key_0",
+      "package_id": "64648e7f87f3d1b856ae2622",
+      "project": "123",
+      "scope": "test"
+    },
+    {
+      "_id": "64648e7f87f3d1b856ae2621",
+      "key": "key_1",
+      "package_id": "64648e7f87f3d1b856ae2622",
+      "project": "123",
+      "scope": "test"
+    }
+  ],
+  "shift_schedules": []
+}
